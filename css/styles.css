@@ -63,27 +63,36 @@ body {
 }
 
 .nav--elements li{
-    color: var(--color-black);
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 2.4rem;
+    letter-spacing: 0.09rem;
     padding: 5px 0;
+}
+
+.nav--elements li a {
+    color: #555555;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
 .nav--elements li:first-child {
+    padding: 5px 0px;
+    border-bottom: 2px solid #E4E4E4 ;
+}
+
+.nav--elements li:first-child a {
     font-size: 2.4rem;
-    color: var(--color-purple);
     font-weight: 700;
     line-height: 3.2rem;
-    padding: 5px 0px;
+    letter-spacing: 0.1rem;
+    color: var(--color-purple);
 }
 
 .nav--elements li span {
-    display: inline-block;
-    justify-items: center;
+    display: inline-flex;
+    margin-top: 5px;
     width: 15px;
     height: 15px;
     background-image: url(../assets/icons/rightArrow.svg);

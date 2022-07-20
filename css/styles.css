@@ -1,3 +1,97 @@
+/* General styles */
+:root {
+    --color-indigo: #486DB7;
+    --color-pink: #F778B9;
+    --color-purple: #B378FF;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-background: #fefffe;
+    --font-source-sans: 'Source Sans Pro', sans-serif;
+    --font-merriweather: 'Merriweather', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+summary {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-source-sans);
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+
+
+
+/* navbar styles */
+.nav {
+    width: 100%;
+    min-width: 320px;
+    min-height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.nav-menu {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+}
+
+
+.nav--elements {
+    padding: 10px;
+}
+
+.nav--elements li{
+    color: var(--color-black);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav--elements li:first-child {
+    font-size: 2.4rem;
+    color: var(--color-purple);
+    font-weight: 700;
+    line-height: 3.2rem;
+    padding: 5px 0px;
+}
+
+.nav--elements li span {
+    display: inline-block;
+    justify-items: center;
+    width: 15px;
+    height: 15px;
+    background-image: url(../assets/icons/rightArrow.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* example class names */
 .button__send {
 

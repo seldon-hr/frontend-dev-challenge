@@ -6,31 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mente es maravillosa</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <header>
         <nav class="nav">
-            <details open>
+            <details>
                 <summary>
-                    <div>
-                        <img src="./assets/icons/openMenuBurgerLogo.svg" alt="">
-                        <img src="./assets/icons/closeMenuLogo.svg" alt="">
+                    <div class="nav-icon-menu">
+                        <img class="nav-icon-menu--open" src="./assets/icons/openMenuBurgerLogo.svg" alt="">
+                        <img class="nav-icon-menu--closed" src="./assets/icons/closeMenuLogo.svg" alt="">
                     </div>
                 </summary>
-                <ol>
-                    <li>Embarazo</li> 
-                    <li>Quiero ser mamá</li>
-                    <li>Voy a ser mamá</li>
-                    <li>Parto</li>
-                    <li>Educación</li>
-                    <li>Aprender a ser mamá</li>
-                    <li>Educación para bebés</li>
-                    <li>Educación para niños</li>
-                </ol>
+                <section class="nav-menu">
+                    <ol class="nav--elements">
+                        <li><a href="">Embarazo</a></li> 
+                        <li><a href="">Quiero ser mamá <span></span> </a></li>
+                        <li><a href="">Voy a ser mamá <span></span> </a></li>
+                        <li><a href="">Parto <span></span> </a></li>
+                    </ol>
+                    <ol class="nav--elements">
+                        <li><a href="">Educación</a></li>
+                        <li><a href="">Aprender a ser mamá <span></span> </a></li>
+                        <li><a href="">Educación para bebés <span></span> </a></li>
+                        <li><a href="">Educación para niños <span></span> </a></li>
+                    </ol>
+                </section>
             </details>
-            <img src="./assets/images/logo.svg" alt="">
-            <img src="./assets/icons/searchMenuLogo.svg" alt="">
+            <img class="nav-logo" src="./assets/images/logo.svg" alt="">
+            <img class="nav-icon-serch" src="./assets/icons/searchMenuLogo.svg" alt="">
         </nav>
     </header>
 

@@ -55,6 +55,7 @@ body {
     position: absolute;
     padding: 16px;
     width: 100%;
+    background-color: var(--color-background);
 }
 
 
@@ -64,6 +65,11 @@ body {
 
 .nav--elements li{
     padding: 5px 0;
+}
+
+.nav--elements li:hover{
+    background-color:  #F1F1F1;
+    transition: all 0.3s;
 }
 
 .nav--elements li a {
@@ -102,6 +108,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.nav-logo{
+    cursor: pointer;
+}
+
 
 .nav-icon-menu {
     padding: 15px;
@@ -137,6 +147,7 @@ body {
 .nav-icon-serch {
     padding: 15px;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 @media (min-width:768px) {
@@ -155,13 +166,52 @@ body {
 }
 
 
+/* MainPhoto section */
+
+.photo-slider{
+    width: 100%;
+}
+
+.photo-slider__slide img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
+/* Grid Section */
+
+.grid-section {
+   width: 90%;
+   margin: 0 auto;
+   display: grid;
+}
+
+.grid-section-tittle {
+    padding: 20px 0 5px;
+    
+    font-weight: 700;
+    line-height: 4rem;
+    font-size: 3.2rem;
+    letter-spacing: 0.09rem;
+}
+
+.grid-section-title__underline {
+    display: block;
+    width: 134px;
+    height: 2px;
+    background-color: #2D2D2D;
+}
+
+.grid-section-card {
+    
+}
 
 
-
-
-
+.grid-section-card__icons img {
+    width: 100%;
+}
 
 
 

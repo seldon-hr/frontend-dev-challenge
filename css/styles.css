@@ -48,7 +48,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu {
@@ -63,18 +63,19 @@ body {
 }
 
 .nav--elements li{
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    letter-spacing: 0.09rem;
     padding: 5px 0;
 }
 
 .nav--elements li a {
-    color: #555555;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 0.09rem;
+    color: #555555;
+    width: 100%;
+    height: auto;
 }
 
 .nav--elements li:first-child {
@@ -100,6 +101,72 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+
+.nav-icon-menu {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #414141;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Close and Open hamburger logo */
+
+/* .navlist.open .nav-icon-menu.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.nav-icon-menu.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-icon-menu.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+} */
+
+
+.nav-icon-serch {
+    padding: 15px;
+    margin-right: 20px;
+}
+
+@media (min-width:768px) {
+    
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-icon-menu {
+        margin-left: 50px;
+    }
+
+    .nav-icon-serch {
+        margin-right: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* example class names */
 .button__send {

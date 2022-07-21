@@ -421,6 +421,18 @@ body {
 }
 
 
+/* Section form */
+.container-form {
+    margin: 30px auto;
+    padding: 20px;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.container-form-input {
+    display: inline-block
+}
+
 /* example class names */
 .button__send {
 

@@ -331,6 +331,27 @@ body {
   
 }
 
+/* Section Illustrations */
+
+.container-illustrations {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.container-illustrations-img {
+    margin: 50px auto;
+}
+
+@media  screen and (min-width:768px) {
+    .container-illustrations {
+       display: block;
+    }
+
+    .container-illustrations-img {
+        margin: 50px;
+    }
+}
 
 
 

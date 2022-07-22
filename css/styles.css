@@ -439,6 +439,7 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: -0.02rem;
+    cursor: pointer;
 }
 
 .container-form-input__radio {
@@ -514,6 +515,14 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
     align-items: center;
 }
 
+.container-form-input__button:hover {
+    background-color: rgba(105, 105, 105, 0.7);
+}
+
+.container-form-input__button--search:hover {
+    background-color: rgba(105, 105, 105, 0.7);
+}
+
 .container-form-input__button--search img {
    margin-right: 8px;
 }
@@ -532,6 +541,7 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
     padding: 10px;
     border-radius: 5px;
     color: #B1B1B1;
+    cursor: text;
 }
 
 .container-form-input__select-list {
@@ -548,6 +558,7 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
     border: 1px solid #696969;
     border-radius: 5px;
     padding: 10px;
+    cursor: default;
 }
 
 

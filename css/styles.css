@@ -355,25 +355,27 @@ body {
 
 /* Section Text */
 
-.container-paragraphs {
+.container-paragrphs {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 20px;
 }
 
-/* @media  screen and (min-width:768px) {
-    .container-paragraphs {
-        display: inline-flex;
-       flex-direction: column;
+@media  screen and (min-width:768px) {
+    .container-paragrphs {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 20px;
     }
 
-} */
+}
 
 .container-article h1 {
     font-weight: 700;
     font-size: 4rem;
     line-height: 4rem;
     letter-spacing: -0.02rem;
-    margin: 50px 0;
+    margin: 20px 20px 50px 0px;
 }
 
 .container-article h6 {
@@ -381,6 +383,7 @@ body {
     font-weight: 700;
     line-height: 3.2rem;
     letter-spacing: -0.02rem;
+    margin-top: 160px;
     margin-bottom: 20px;
 }
 
@@ -412,6 +415,7 @@ body {
     font-family: var(--font-merriweather);
     text-align: center;
     font-style: italic;
+    margin-top: 60px;
 }
 
 .container-article__paragraph--bolder {

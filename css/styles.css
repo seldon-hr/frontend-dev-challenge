@@ -10,7 +10,7 @@
     --font-merriweather: 'Merriweather', serif;
 }
 
-* {
+*, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -434,8 +434,98 @@ body {
 }
 
 .container-form-input {
-    display: inline-block
+    display: flex;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
 }
+
+.container-form-input__radio {
+    line-height: 2.4rem;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+input[type="radio"]:not(:checked) {
+    border: 2px solid #979797;
+}
+
+
+/* input[type="checkbox"] {
+    display: none;
+}
+
+.container-form-input__checkbox {
+    padding-left: 2rem;
+    position: relative;
+}
+
+.container-form-input__checkbox:before {
+    content: " ";
+    border: solid 1px #979797;
+    border-radius: 3px;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+input[type="checkbox"]:checked + .container-form-input__checkbox:before {
+    background-color: #979797;
+    background-image: url(./assets/icons/bx-check.svg);
+    color: #979797;
+    border: red solid 2px;
+} */
+
+
+.container-form-input__button {
+    height: 40px;
+    width: auto;
+    padding: 0px 16px;
+    background-color: #696969;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    color: var(--color-white);
+}
+
+.container-form-input__button:first-of-type {
+    background-color: var(--color-white);
+    border: 1px solid #696969;
+    color: #696969;
+    font-weight: 400;
+}
+
+.container-form-input__button--search {
+    height: 40px;
+    width: auto;
+    padding:  16px;
+    background-color: #696969;
+    border-radius: 5px;
+    border: none;
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form-input__button--search img {
+   margin-right: 8px;
+}
+
+.container-form-input__button--search p {
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+}
+
+
+
 
 /* example class names */
 .button__send {

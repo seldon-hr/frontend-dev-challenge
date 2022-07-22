@@ -157,11 +157,21 @@
                     <h3 class="grid-section-tittle">Form</h3>
                     <span class="grid-section-title__underline"></span>
                     <form class="container-form">
-                        <input type="radio" class="container-form-input">Sí
-                        <input type="checkbox" class="container-form-input">Acepto
-                        <input type="button" value="No, gracias" class="container-form-input">
-                        <input type="button" value="OK!" class="container-form-input">
-                        <input type="button" value="Búsqueda" class="container-form-input">
+                        <label for="input-radio" class="container-form-input container-form-input__radio">
+                            <input type="radio" id="input-radio">
+                            Sí
+                        </label>
+                        <label for="input-checkbox"  class="container-form-input  container-form-input__checkbox">
+                            <input type="checkbox" id="input-checkbox">
+                            Acepto
+                        </label>
+                        <input type="button" value="No, gracias" class="container-form-input container-form-input__button">
+                        <input type="button" value="OK!" class="container-form-input container-form-input__button">
+                        <button value="Búsqueda" class="container-form-input container-form-input__button--search">
+                            <img src="./assets/icons/searchMenuLogoWhite.svg" alt="" srcset="">   
+                            <p>Búsqueda</p>
+                            
+                        </button>
                         <input type="email" placeholder="Inserte tu: correo"  class="container-form-input">
                         <select name="" id="" class="container-form-input">
                             <option value="">Select</option>

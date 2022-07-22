@@ -623,6 +623,80 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
     padding: 10px 20px;
 }
 
+
+/* Bloquote Slider */
+
+.bloquote-slider {
+  position: relative;
+  max-width: 1000px;   
+  margin: 40px auto;
+}
+
+.bloquote-card {
+    display: none;
+    width: 90%;
+    text-align: center;
+    font-weight: 400;
+    line-height: 3.2rem;
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+.bloquote-card p {
+    width: 40%;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #2D2D2D;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(180, 179, 179, 0.63);
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #BBB;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6  ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
 /* example class names */
 .button__send {
 

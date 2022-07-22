@@ -525,7 +525,30 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 }
 
 
+.container-form-input__email {
+    height: 50px;
+    width: 250px;
+    border: solid 1px #B1B1B1;
+    padding: 10px;
+    border-radius: 5px;
+    color: #B1B1B1;
+}
 
+.container-form-input__select-list {
+    height: 50px;
+    width: 300px;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container-form-input__message {
+    height: 150px;
+    width: 250px;
+    border: 1px solid #696969;
+    border-radius: 5px;
+    padding: 10px;
+}
 
 /* example class names */
 .button__send {

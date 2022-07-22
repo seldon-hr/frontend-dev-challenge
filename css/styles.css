@@ -550,6 +550,53 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
     padding: 10px;
 }
 
+
+/* Section Logos */
+
+.container-logos-isotipo img{
+    margin: 50px;
+    width: 70px;
+}
+
+.container-logos-logo img {
+    width: 150px;
+    margin: 50px;
+}
+
+@media  screen and (min-width:768px) {
+    .container-logos-isotipo img{
+        width: 200px;
+    }
+
+    .container-logos-logo img {
+        width: 200px;
+    }
+}
+
+@media  screen and (min-width:1024px) {
+    .container-logos-isotipo img{
+        width: 300px;
+    }
+
+    .container-logos-logo img {
+        width: 250px;
+    }
+}
+
+.container-logos-logo--grey {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #C4C4C4;
+}
+
+.container-logos-logo--grey  img{
+    margin: 0 auto;
+    background-color: #C4C4C4;
+}
+
+
+
+
 /* example class names */
 .button__send {
 

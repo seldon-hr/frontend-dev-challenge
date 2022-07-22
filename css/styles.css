@@ -172,6 +172,10 @@ body {
     width: 100%;
 }
 
+.photo-slider__slide {
+    height: auto;
+}
+
 .photo-slider__slide img{
     width: 100%;
     background-size: cover;
@@ -606,7 +610,18 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 }
 
 
+/* Intermediate Photos */
 
+.photo-slider__slide p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #7D7D7D;
+    background-color:  #F1F1F1;
+    position: relative;
+    top: -3px;
+    padding: 10px 20px;
+}
 
 /* example class names */
 .button__send {

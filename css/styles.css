@@ -767,12 +767,15 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 
 .features-container-section {
     margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1;
 }
 
 .excerpt-container {
     display: flex;
     flex-direction: row;
     max-width: 300px;
+    margin: 50px 0;
 }
 
 .excerpt-container span {
@@ -791,6 +794,114 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
     letter-spacing: 0.02rem;
     margin-left: 20px;
 }
+
+.aside-container-features {
+    margin: 50px 0;
+}
+
+@media  screen and (min-width:768px) {
+    .container-article {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .features-container-section {
+        grid-template-columns:  40% 60%;
+    }
+
+    .features-container {
+        grid-template-columns:  20% 80%;
+    }
+
+}
+
+@media  screen and (min-width:1024px) {
+    .container-article {
+        font-size: 2.8rem;
+        line-height: 4.5rem;
+    }
+
+    .excerpt-container p {
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+
+    .excerpt-container span {
+        height: 220px;
+    }
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: 1;
+}
+
+
+.avatar span{
+    background-image: url(../assets/icons/avatar.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 88px;
+    display: block;
+}
+
+.search-container {
+    height: 56px;
+    margin: 50px auto;
+    border: 1px solid  #BBB;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.search-container input {
+    border: none;
+    margin: 10px 15px;
+    cursor: text;
+}
+
+
+.search-container input:focus {
+    border: none;
+    outline: none;
+}
+
+.search-container div {
+    background-color: var(--color-purple);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+}
+
+.search-container div:hover {
+    background-color: rgba(179, 120, 255, 0.788);
+}
+
+
+.search-container span {
+    background-image: url(../assets/icons/searchMenuLogoWhite.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+
+
+@media  screen and (min-width:768px) {
+    .features-container {
+        grid-template-columns:  20% 80%;
+    }
+
+}
+
 
 
 

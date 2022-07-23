@@ -903,6 +903,24 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 }
 
 
+.faq-container {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-bottom: #000000 2px dotted;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: 00.02rem;
+}
+
+@media  screen and (min-width:768px) {
+    .faq-container {
+        font-size: 2.4rem;
+    }
+
+}
+
 
 
 

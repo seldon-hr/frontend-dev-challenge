@@ -664,6 +664,18 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
     font-style: italic;
 }
 
+.bloquote-card span {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url(../assets/icons/quatationMarks.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40.03px;
+    height: 32px;
+}
+
 .prev, .next {
     cursor: pointer;
     position: absolute;

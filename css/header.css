@@ -91,7 +91,7 @@
 
 /* Close and Open hamburger logo */
 
-/* .navlist.open .nav-icon-menu.active .bar:nth-child(2){
+.navlist.open .nav-icon-menu.active .bar:nth-child(2){
     opacity: 0;
 }
 
@@ -101,7 +101,7 @@
 
 .nav-icon-menu.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
-} */
+}
 
 
 .nav-icon-serch {

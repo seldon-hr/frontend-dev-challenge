@@ -1,0 +1,120 @@
+/* navbar styles */
+.nav {
+    width: 100%;
+    min-width: 320px;
+    min-height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    background-color: var(--color-background);
+}
+
+
+.nav--elements {
+    padding: 10px;
+}
+
+.nav--elements li{
+    padding: 5px 0;
+}
+
+.nav--elements li:hover{
+    background-color:  #F1F1F1;
+    transition: all 0.3s;
+}
+
+.nav--elements li a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 0.09rem;
+    color: #555555;
+    width: 100%;
+    height: auto;
+}
+
+.nav--elements li:first-child {
+    padding: 5px 0px;
+    border-bottom: 2px solid #E4E4E4 ;
+}
+
+.nav--elements li:first-child a {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: 0.1rem;
+    color: var(--color-purple);
+}
+
+.nav--elements li span {
+    display: inline-flex;
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../assets/icons/rightArrow.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-logo{
+    cursor: pointer;
+}
+
+
+.nav-icon-menu {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #414141;
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Close and Open hamburger logo */
+
+/* .navlist.open .nav-icon-menu.active .bar:nth-child(2){
+    opacity: 0;
+}
+
+.nav-icon-menu.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.nav-icon-menu.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+} */
+
+
+.nav-icon-serch {
+    padding: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+@media  screen and (min-width:768px) {
+
+    .nav-icon-menu {
+        margin-left: 50px;
+    }
+
+    .nav-icon-serch {
+        margin-right: 50px;
+    }
+}

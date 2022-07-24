@@ -1,0 +1,38 @@
+/* General styles */
+:root {
+    --color-indigo: #486DB7;
+    --color-pink: #F778B9;
+    --color-purple: #B378FF;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-background: #fefffe;
+    --font-source-sans: 'Source Sans Pro', sans-serif;
+    --font-merriweather: 'Merriweather', serif;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+summary {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-source-sans);
+}
+
+body {
+    background-color: var(--color-background);
+}

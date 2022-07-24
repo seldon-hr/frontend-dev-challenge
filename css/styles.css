@@ -920,7 +920,7 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 /* Adds */
 
 .add-baner {
-    width: 80%;
+    width: 75%;
     margin: 10% auto;
     display: flex;
     justify-content: center;
@@ -933,6 +933,56 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
         margin: 5% auto;
     }
 
+}
+
+
+/* Articles and cards */
+
+.articles {
+    display: grid;
+    grid-template-columns: auto;
+    width: 80%;
+    margin: 0 auto;
+    gap: 8px;
+    padding: 8px;
+}
+
+.article-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.article-card-container:hover {
+    position: absolute;
+    background-color: #B1B1B1;
+}
+
+.article-card-container span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    color: var(--color-pink);
+    display: inline-flex;
+}
+
+.article-card-container h5 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.02rem;
+    color: #414141;
+}
+
+.article-card-container p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    letter-spacing: 0.02rem;
+    line-height: 3.2rem;
+    font-family: var(--font-merriweather);
 }
 
 

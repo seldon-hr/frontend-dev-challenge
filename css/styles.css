@@ -1,182 +1,74 @@
-/* General styles */
-:root {
-    --color-indigo: #486DB7;
-    --color-pink: #F778B9;
-    --color-purple: #B378FF;
-    --color-white: #FFFFFF;
-    --color-black: #000000;
-    --color-background: #fefffe;
-    --font-source-sans: 'Source Sans Pro', sans-serif;
-    --font-merriweather: 'Merriweather', serif;
-}
+/* General templates imports */
 
-*, *::before, *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url(./root.css);
+@import url(./header.css);
+@import url(./foooter.css);
 
-ol {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-summary {
-    list-style: none;
-}
-
-html {
-    font-size: 62.5%;
-    font-family: var(--font-source-sans);
-}
-
-body {
-    background-color: var(--color-background);
-}
-
-
-
-
-/* navbar styles */
-.nav {
-    width: 100%;
-    min-width: 320px;
-    min-height: 48px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.nav-menu {
-    position: absolute;
-    padding: 16px;
-    width: 100%;
-    background-color: var(--color-background);
-}
-
-
-.nav--elements {
-    padding: 10px;
-}
-
-.nav--elements li{
-    padding: 5px 0;
-}
-
-.nav--elements li:hover{
-    background-color:  #F1F1F1;
-    transition: all 0.3s;
-}
-
-.nav--elements li a {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    letter-spacing: 0.09rem;
-    color: #555555;
-    width: 100%;
-    height: auto;
-}
-
-.nav--elements li:first-child {
-    padding: 5px 0px;
-    border-bottom: 2px solid #E4E4E4 ;
-}
-
-.nav--elements li:first-child a {
-    font-size: 2.4rem;
-    font-weight: 700;
-    line-height: 3.2rem;
-    letter-spacing: 0.1rem;
-    color: var(--color-purple);
-}
-
-.nav--elements li span {
-    display: inline-flex;
-    margin-top: 5px;
-    width: 15px;
-    height: 15px;
-    background-image: url(../assets/icons/rightArrow.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.nav-logo{
-    cursor: pointer;
-}
-
-
-.nav-icon-menu {
-    padding: 15px;
-    cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #414141;
-    border-radius: 2px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Close and Open hamburger logo */
-
-/* .navlist.open .nav-icon-menu.active .bar:nth-child(2){
-    opacity: 0;
-}
-
-.nav-icon-menu.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-}
-
-.nav-icon-menu.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-} */
-
-
-.nav-icon-serch {
-    padding: 15px;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-@media  screen and (min-width:768px) {
-
-    .nav-icon-menu {
-        margin-left: 50px;
-    }
-
-    .nav-icon-serch {
-        margin-right: 50px;
-    }
-}
 
 
 /* MainPhoto section */
 
 .photo-slider{
     width: 100%;
-}
-
-.photo-slider__slide {
-    height: auto;
-}
-
-.photo-slider__slide img{
-    width: 100%;
+    height: calc(75vh - 50px);
+    
+    background-color: #7D7D7D;
+    background-image: url(../assets/images/photoBanner1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all .1s ease-in-out;
+    animation: banner 20s infinite linear;
+    filter: grayscale(.2);
+}
+
+
+.photo-slider__slide {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.photo-slider__slide h1 {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 2px 1px 4px #26110A;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    filter: none;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url(../assets/images/photoBanner1.jpg);
+    }
+    25% {
+        background-image: url(../assets/images/photoBanner1.jpg);
+    }
+    26% {
+        background-image: url(../assets/images/photoBanner2.jpg);
+    }
+    50% {
+        background-image: url(../assets/images/photoBanner2.jpg);
+    }
+    51% {
+        background-image: url(../assets/images/photoBanner3.jpg);
+    }
+    75% {
+        background-image: url(../assets/images/photoBanner3.jpg);
+    }
+    76% {
+        background-image: url(../assets/images/photoBanner4.jpg);
+    }
+    100% {
+        background-image: url(../assets/images/photoBanner4.jpg);
+    }
 }
 
 
@@ -461,32 +353,6 @@ input[type="radio"]:not(:checked) {
 }
 
 
-/* input[type="checkbox"] {
-    display: none;
-}
-
-.container-form-input__checkbox {
-    padding-left: 2rem;
-    position: relative;
-}
-
-.container-form-input__checkbox:before {
-    content: " ";
-    border: solid 1px #979797;
-    border-radius: 3px;
-    width: 1em;
-    height: 1em;
-    position: absolute;
-    left: 0px;
-    top: 2px;
-}
-
-input[type="checkbox"]:checked + .container-form-input__checkbox:before {
-    background-color: #979797;
-    background-image: url(./assets/icons/bx-check.svg);
-    color: #979797;
-    border: red solid 2px;
-} */
 
 
 .container-form-input__button {
@@ -615,7 +481,22 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 
 /* Intermediate Photos */
 
-.photo-slider__slide p {
+.intermediate-photo-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intermediate-photo-slider__slide img {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+.intermediate-photo-slider p {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -652,7 +533,7 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 @media  screen and (min-width:1024px) {
     
     .container-bloquote-slider {
-        margin: 300px;
+        margin: 100px;
     }
 
     .bloquote-card {
@@ -955,7 +836,7 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 }
 
 .article-card-container:hover {
-    position: absolute;
+    
     background-color: #B1B1B1;
 }
 
@@ -1067,6 +948,9 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 
 
 }
+
+
+
 
 
 /* example class names */

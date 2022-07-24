@@ -986,6 +986,88 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 }
 
 
+/* NewsletterSection */
+
+.newsletter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    margin: 50px auto;
+}
+
+.newsletter img {
+    filter: grayscale(1);
+}
+
+.newsletter-register{
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: -00.02rem;
+    line-height: 3.2rem;
+}
+
+.newsletter-register div {
+    border: 1px solid  #B1B1B1;
+    border-radius: 5px;
+    padding: 5px 5px 10px 5px;
+    display: flex;
+}
+
+.newsletter-register input[type="text"]{
+    border: none;
+    outline: none;
+    cursor: text;
+}
+
+.newsletter-register input[type="button"]{
+    height: 40px;
+    width: auto;
+    padding: 0px 6px;
+    background-color: #696969;
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    color: var(--color-white);
+}
+
+
+@media  screen and (min-width:768px) {
+    .newsletter {
+        width: 50%;
+        flex-direction: row;
+        
+    }
+
+    .newsletter-register{
+        margin-left: 30px;
+    }
+
+    .newsletter-register h6{
+      margin-top: 70px;
+      position: relative;
+      top: -30px;  
+    }
+
+    .newsletter-register input[type="text"] {
+        width: 30vh;
+        background-color: #ECF0F7;
+    }
+
+    .newsletter span {
+        width: 100%;
+        height: 120px;
+        background-color: #ECF0F7;
+        position: absolute;
+        z-index: -1;
+        margin-top: 70px;
+    }
+
+
+}
+
 
 /* example class names */
 .button__send {

@@ -10,17 +10,65 @@
 
 .photo-slider{
     width: 100%;
-}
-
-.photo-slider__slide {
-    height: auto;
-}
-
-.photo-slider__slide img{
-    width: 100%;
+    height: calc(75vh - 50px);
+    
+    background-color: #7D7D7D;
+    background-image: url(../assets/images/photoBanner1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: all .1s ease-in-out;
+    animation: banner 20s infinite linear;
+    filter: grayscale(.2);
+}
+
+
+.photo-slider__slide {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.photo-slider__slide h1 {
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 2rem;
+    text-shadow: 2px 1px 4px #26110A;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    filter: none;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url(../assets/images/photoBanner1.jpg);
+    }
+    25% {
+        background-image: url(../assets/images/photoBanner1.jpg);
+    }
+    26% {
+        background-image: url(../assets/images/photoBanner2.jpg);
+    }
+    50% {
+        background-image: url(../assets/images/photoBanner2.jpg);
+    }
+    51% {
+        background-image: url(../assets/images/photoBanner3.jpg);
+    }
+    75% {
+        background-image: url(../assets/images/photoBanner3.jpg);
+    }
+    76% {
+        background-image: url(../assets/images/photoBanner4.jpg);
+    }
+    100% {
+        background-image: url(../assets/images/photoBanner4.jpg);
+    }
 }
 
 
@@ -459,7 +507,22 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 
 /* Intermediate Photos */
 
-.photo-slider__slide p {
+.intermediate-photo-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intermediate-photo-slider__slide img {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+.intermediate-photo-slider p {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -496,7 +559,7 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 @media  screen and (min-width:1024px) {
     
     .container-bloquote-slider {
-        margin: 300px;
+        margin: 100px;
     }
 
     .bloquote-card {

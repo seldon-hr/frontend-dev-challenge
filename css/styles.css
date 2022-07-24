@@ -151,10 +151,6 @@ body {
 }
 
 @media  screen and (min-width:768px) {
-    
-    .nav-logo {
-        display: none;
-    }
 
     .nav-icon-menu {
         margin-left: 50px;
@@ -921,8 +917,23 @@ input[type="checkbox"]:checked + .container-form-input__checkbox:before {
 
 }
 
+/* Adds */
+
+.add-baner {
+    width: 80%;
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+}
 
 
+@media  screen and (min-width:768px) {
+    .add-baner {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+}
 
 
 
